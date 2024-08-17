@@ -1,0 +1,69 @@
+{
+  "albums": {
+    "Error loading albums.": "相册加载错误。",
+    "Loading...": "相册加载中...",
+    "My Albums": "我的相册"
+  },
+  "Back": "返回",
+  "error": {
+    "Go Home": "返回首页",
+    "Page Not Found": "您访问的页面不存在"
+  },
+  "footer": "© 2024 你的公司",
+  "login": {
+    "Login": "登录",
+    "Password": "密码",
+    "Title": "登录",
+    "Username": "用户名"
+  },
+  "navbar": {
+    "home": "首页",
+    "languages": {
+      "en": "En",
+      "zh": "中文"
+    },
+    "logout": "退出",
+    "posts": "帖子",
+    "users": "用户",
+    "welcome": "欢迎"
+  },
+  "photos": {
+    "Error loading photos.": "照片加载错误。",
+    "Loading...": "照片加载中...",
+    "My Photos": "我的照片"
+  },
+  "posts": {
+    "Error loading posts.": "帖子加载错误。",
+    "Loading...": "帖子加载中...",
+    "My Posts": "我的帖子",
+    "Posts": "帖子列表"
+  },
+  "sidebar": {
+    "My Albums": "我的相册",
+    "My Photos": "我的照片",
+    "My Posts": "我的帖子",
+    "My Todos": "我的待办",
+    "Posts": "帖子列表",
+    "Users": "用户列表"
+  },
+  "todos": {
+    "Completed": "已完成",
+    "Delete": "删除",
+    "Error loading todos.": "加载错误。",
+    "Incomplete": "未完成",
+    "Loading...": "加载中...",
+    "My Todos": "我的待办"
+  },
+  "users": {
+    "Address": "地址",
+    "Company": "公司",
+    "Email": "电子邮件",
+    "Error loading users.": "加载用户时出错。",
+    "Loading...": "加载中...",
+    "Name": "姓名",
+    "Phone": "电话",
+    "Title": "用户列表",
+    "Username": "用户名",
+    "Website": "网站"
+  }
+}

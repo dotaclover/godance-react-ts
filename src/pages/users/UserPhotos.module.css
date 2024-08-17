@@ -1,0 +1,12 @@
+/* src/UserPhotos.css */
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-image {
+  width: 100%;
+  height: 200px; /* 固定图片高度 */
+  object-fit: contain; /* 使图片按比例缩放并包含在图片框中 */
+}

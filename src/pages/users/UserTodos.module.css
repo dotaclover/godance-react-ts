@@ -1,0 +1,11 @@
+/* UserTodos.module.css */
+
+.customCheckbox {
+  width: 20px;
+  height: 20px;
+}
+
+.checkboxLabel {
+  font-size: 1.25rem; /* 使文字稍大 */
+  cursor: pointer; /* 鼠标悬停时显示为指针 */
+}

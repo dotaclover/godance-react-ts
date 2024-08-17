@@ -1,0 +1,16 @@
+.navbar {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.languageSelect {
+  margin-right: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  width: 100%; /* Make it responsive */
+  max-width: 85px; /* Set maximum width */
+}
+
+.languageSelect option {
+  padding: 0.5rem;
+}

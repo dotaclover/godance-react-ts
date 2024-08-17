@@ -1,0 +1,26 @@
+.userDetails {
+  word-wrap: break-word;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+@media (max-width: 768px) {
+  .table thead th:nth-child(3),
+  .table tbody td:nth-child(3) {
+    width: 10%;
+  }
+
+  .moreButtonIcon {
+    font-size: 1.2rem; /* 适合移动端的图标大小 */
+    padding: 0.2rem; /* 减少内边距 */
+  }
+}

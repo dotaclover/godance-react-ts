@@ -1,0 +1,14 @@
+/* Posts.module.css */
+.link {
+  text-decoration: none;
+}
+
+.listItem {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.listItem:hover,
+.listItem.active {
+  background-color: #007bff; /* Bootstrap 的 primary 颜色 */
+  color: white;
+}

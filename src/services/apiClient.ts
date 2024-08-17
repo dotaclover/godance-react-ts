@@ -1,10 +1,22 @@
-import axios, { CanceledError } from "axios";
+import axios from "axios";
 
-export default axios.create({
+// 创建 axios 实例
+const apiClient = axios.create({
     baseURL: 'https://jsonplaceholder.typicode.com/',
-    headers: {
-        'api-key': '...'
-    }
+    headers: {}
 });
 
-export { CanceledError };
+// 请求拦截器
+apiClient.interceptors.request.use(
+    (config) => {
+        const token = localStorage.getItem('token');
+        if (token)
+            config.headers['token'] = token;
+        return config;
+    },
+    (error) => {
+        return Promise.reject(error);
+    }
+);
+
+export default apiClient;

@@ -1,0 +1,69 @@
+{
+  "albums": {
+    "Error loading albums.": "Error loading albums.",
+    "Loading...": "Loading...",
+    "My Albums": "My Albums"
+  },
+  "Back": "Back",
+  "error": {
+    "Go Home": "Go Home",
+    "Page Not Found": "Page Not Found"
+  },
+  "footer": "© 2024 Your Company",
+  "login": {
+    "Login": "Login",
+    "Password": "Password",
+    "Title": "Login",
+    "Username": "Username"
+  },
+  "navbar": {
+    "home": "Home",
+    "languages": {
+      "en": "En",
+      "zh": "中文"
+    },
+    "logout": "logout",
+    "posts": "Posts",
+    "users": "Users",
+    "welcome": "Welcome"
+  },
+  "photos": {
+    "Error loading photos.": "Error loading photos.",
+    "Loading...": "Loading...",
+    "My Photos": "My Photos"
+  },
+  "posts": {
+    "Error loading posts.": "Error loading posts.",
+    "Loading...": "Loading...",
+    "My Posts": "My Posts",
+    "Posts": "Posts"
+  },
+  "sidebar": {
+    "My Albums": "My Albums",
+    "My Photos": "My Photos",
+    "My Posts": "My Posts",
+    "My Todos": "My Todos",
+    "Posts": "Post List",
+    "Users": "User List"
+  },
+  "todos": {
+    "Completed": "Completed",
+    "Delete": "Delete",
+    "Error loading todos.": "Error loading todos.",
+    "Incomplete": "Incomplete",
+    "Loading...": "Loading...",
+    "My Todos": "My Todos"
+  },
+  "users": {
+    "Address": "Address",
+    "Company": "Company",
+    "Email": "Email",
+    "Error loading users.": "Error loading users.",
+    "Loading...": "Loading...",
+    "Name": "Name",
+    "Phone": "Phone",
+    "Title": "Users",
+    "Username": "Username",
+    "Website": "Website"
+  }
+}

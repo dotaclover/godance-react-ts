@@ -1,32 +1,37 @@
-import { useEffect, useState } from "react";
-import userService, { User } from "../services/userService";
-import { CanceledError } from "../services/apiClient";
+import { useQuery } from '@tanstack/react-query';
+import userService from '../services/userServices';
+
+export interface User {
+    id: number;
+    name: string;
+    username: string;
+    email: string;
+    address: {
+        street: string;
+        suite: string;
+        city: string;
+        zipcode: string;
+        geo: {
+            lat: string;
+            lng: string;
+        };
+    };
+    phone: string;
+    website: string;
+    company: {
+        name: string;
+        catchPhrase: string;
+        bs: string;
+    };
+}
+
 
 const useUsers = () => {
-    const [error, setError] = useState("");
-    const [isLoading, setLoading] = useState(false);
-    const [users, setUsers] = useState<User[]>([]);
-
-    useEffect(() => {
-        setLoading(true);
-        setUsers([]);
-        setError("");
-
-        const { request, cancel } = userService.getAll();
-        request
-            .then((res) => {
-                setLoading(false);
-                setUsers(res.data);
-            })
-            .catch((err) => {
-                setLoading(false);
-                !(err instanceof CanceledError) && setError(err.message);
-            });
-        return () => cancel();
-    }, []);
-
-    return { users, setUsers, error, setError, isLoading, setLoading };
-
-}
+    return useQuery<User[]>({
+        queryKey: ['users'],
+        queryFn: () => userService.getUsers().then(response => response.data),
+        staleTime: 5 * 60 * 1000,
+    });
+};
 
 export default useUsers;
