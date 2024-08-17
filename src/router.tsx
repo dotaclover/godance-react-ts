@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Posts from "./pages/Posts";
 import PostDetail from "./pages/PostDetail";
 import Users from "./pages/Users";
@@ -11,7 +11,7 @@ import MainLayoutWrapper from "./pages/layouts/MainLayoutWrapper";
 import Login from "./pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/login",
     element: <Login />,
